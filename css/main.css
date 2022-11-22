@@ -5,7 +5,6 @@
 
 *{
     box-sizing: border-box;
-    background-color: var(--primary);
     color: white;
     padding: 0;
     font-family: 'Signika';
@@ -16,11 +15,21 @@ ul{
     list-style-type: none;
 }
 
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    background-color: var(--primary);
+}
+
 .container{
+    grid-column-start: 1;
+    grid-column-end: 4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px auto auto auto 100px;
-    height: 100vh;
+    grid-template-rows: 100px auto auto auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 header{
@@ -28,8 +37,6 @@ header{
     grid-column-end: 4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 80%;
-    margin: 0 auto; 
 }
 
 header nav ul{
@@ -61,8 +68,6 @@ main{
     grid-column-end: 4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 80%;
-    margin: 0 auto; 
 }
 
 main .text{
@@ -111,9 +116,7 @@ aside{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 150px 150px;
-    /* margin-top: 2em; */
-    width: 80%;
-    margin: 2em auto; 
+    margin-top: 2em;
 }
 
 .head{
@@ -125,9 +128,8 @@ aside{
 section{
     grid-column-start: 1;
     grid-column-end: 4;
-    /* margin-top: 2em; */
-    width: 80%;
-    margin: 0 auto;
+    margin: 3em 0;
+    
 }
 
 .title{
@@ -181,33 +183,63 @@ section{
 }
 
 footer{
-    margin-top: 3em;
     grid-column-start: 1;
     grid-column-end: 4;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    background: gray;
+    background-color: gray;
 }
 
 .foo-contact{
     grid-column-start: 1;
     grid-column-end: 2;
     width: 60%;
-    margin: 0 auto;
-    background-color: gray;
+    margin: 30px auto 0 auto;
 }
 
 .con-title{
     display: block;
     font-size: 4em;
-    background-color: gray;
 }
 
 .foo-form{
     grid-column-start: 2;
     grid-column-end: 3;
+    margin-top: 4em;
+}
+
+.footer-info{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-info nav ul{
+    display: flex;
+    float: right;
+}
+
+.footer-info nav ul li{
+    padding: 0 .4em;
+}
+
+.footer-info .logo{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 1em;
+    font-weight: bolder;
+}
+
+input{
+    width: 80%;
+    height: 3em;
+    margin-bottom: 1em;
     background-color: gray;
+    border: none;
 }
 
 
