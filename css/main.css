@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Signika:wght@500&display=swap');
+:root{
+    --primary:#161617
+}
+
+*{
+    box-sizing: border-box;
+    background-color: var(--primary);
+    color: white;
+    padding: 0;
+    font-family: 'Signika';
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px auto auto auto 100px;
+    height: 100vh;
+}
+
+header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto; 
+}
+
+header nav ul{
+    display: flex;
+    float: right;
+}
+
+header nav ul li{
+    padding: 0 .4em;
+}
+
+.name{
+    text-decoration: underline;
+    text-decoration-color: lightgreen;
+    text-decoration-thickness: .1em;
+}
+
+
+
+header .logo{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 1em;
+    font-weight: bolder;
+}
+
+main{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto; 
+}
+
+main .text{
+    grid-column-start: 1;
+    grid-column-end: 3 ;
+}
+
+main .text .intro{
+    font-size: 5em;
+    margin: 0;
+}
+
+.detail{
+    padding-top: 30px;
+    margin:0;
+    width: 50%;
+}
+
+.contact{
+    margin-top: 4em;
+    text-transform: uppercase;
+}
+
+.contact a{
+    text-decoration-color: lightgreen;
+    text-decoration-thickness: .1em;
+}
+
+.photo{
+    background: url('../assets/HD-wallpaper-portrait-display-tokyo-ghoul-kaneki-ken-dark-anime-thumbnail.jpg');
+    height: 28em;
+}
+
+
+hr{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color: aliceblue;
+    width: 100%;
+    margin-top: 3em;
+}
+
+aside{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px;
+    /* margin-top: 2em; */
+    width: 80%;
+    margin: 2em auto; 
+}
+
+.head{
+    display: block;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+section{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /* margin-top: 2em; */
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 4em;
+    display: block;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    margin-top: 2em;
+}
+
+.first-proj{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-bottom: 50px;
+}
+
+.second-proj{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.third-proj{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.fourth-proj{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.proj-title{
+    display: block;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+}
+
+.proj-desc{
+    text-transform: uppercase;
+    color:grey;
+}
+
+.proj-desc .sec-desc{
+    margin-left: .8em;
+    color:cornflowerblue;
+}
+
+footer{
+    margin-top: 3em;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    background: gray;
+}
+
+.foo-contact{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 60%;
+    margin: 0 auto;
+    background-color: gray;
+}
+
+.con-title{
+    display: block;
+    font-size: 4em;
+    background-color: gray;
+}
+
+.foo-form{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: gray;
+}
+
+
